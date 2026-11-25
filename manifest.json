@@ -3,7 +3,7 @@
   "id": "./",
   "name": "Go Music 974",
   "short_name": "Go Music 974",
-  "description": "Du soleil et des hits ! Écoutez Go Music 974 en direct.",
+  "description": "Du soleil et des hits !",
   "lang": "fr",
   "start_url": "./",
   "scope": "./",
@@ -13,13 +13,13 @@
   "theme_color": "#171717",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "./icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "./icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
