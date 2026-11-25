@@ -200,7 +200,8 @@
 
 </main>
 
-<!-- Lecteur radio permanent -->
+
+<!-- Lecteur radio Go Music 974 -->
 <div class="player">
   <h3>🔴 GO MUSIC 974 - EN DIRECT</h3>
 
@@ -214,46 +215,7 @@
     data-rendered="false">
     <a href="https://www.caster.fm">Radio Streaming</a>
   </div>
-
 </div>
-
-<nav>
-  <button class="active" onclick="showSection('accueil',this)">🏠<br>Accueil</button>
-  <button onclick="showSection('emissions',this)">🎵<br>Émissions</button>
-  <button onclick="showSection('actualites',this)">📰<br>Actualités</button>
-  <button onclick="showSection('contact',this)">ℹ️<br>Infos</button>
-</nav>
-
-<footer>
-  © Go Music 974 - Tous droits réservés
-</footer>
-
-<script>
-  function showSection(id, button) {
-    document.querySelectorAll('.section').forEach(section => {
-      section.classList.remove('active');
-    });
-
-    document.getElementById(id).classList.add('active');
-
-    document.querySelectorAll('nav button').forEach(btn => {
-      btn.classList.remove('active');
-    });
-
-    button.classList.add('active');
-    window.scrollTo(0, 0);
-  }
-</script>
-
 <script src="https://cdn.cloud.caster.fm/widgets/embed.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./service-worker.js")
-      .then(() => console.log("Go Music 974 est prêt !"))
-      .catch(error => console.error(error));
-  });
-}
-</script>
 </body>
 </html>
